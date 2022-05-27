@@ -11,7 +11,7 @@ export default function App() {
       resizeMode="cover"
     >
       <AllPlayers />
-      <StatusBar backgroundColor="#f7f1e3" paddingVertical="20" />
+      <StatusBar style="light" backgroundColor="#000" />
     </ImageBackground>
   );
 }

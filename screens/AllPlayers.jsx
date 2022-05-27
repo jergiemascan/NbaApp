@@ -24,12 +24,8 @@ const AllPlayers = () => {
         "https://api.sportsdata.io/v3/nba/scores/json/Players?key=5cb6aacddea940e28938ec5cf20c2a02"
       );
       const res = await response.json();
-      if (res.length === 0) {
-        setIsError("No player with that name");
-      } else {
-        setPlayers(res);
-      }
-      // console.log(res);
+
+      setPlayers(res);
     } catch (error) {
       console.log(error);
       setIsError("Failed to fetch player");
